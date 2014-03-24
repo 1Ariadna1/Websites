@@ -1,0 +1,131 @@
+.nav {
+	height:35px;
+	background: url(images/bg.gif) repeat-x;
+	position:inherit;
+	font-family:arial, verdana, sans-serif;
+	font-size:#FFF;
+	width:480;
+	/* [disabled]z-index:100; */
+	margin:0;
+	padding:0;
+}
+
+.nav .table {
+	/* [disabled]display:table; */
+	margin:0 auto;
+}
+
+.nav .select,
+.nav .current {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:block;
+	white-space:nowrap;
+}
+
+.nav li {
+margin:0; 
+padding:0; 
+height:auto; 
+float:left;
+}
+
+.nav .select a {
+	display:block;
+	height:35px;
+	float:right;
+	font-weight:bold;
+	/* [disabled]background: url(images/bg.gif); */
+	/* [disabled]text-decoration:none; */
+	line-height:35px;
+	/* [disabled]white-space:nowrap; */
+	color:#FFF;
+	padding-top: 0;
+	/* [disabled]padding-right: 30px; */
+	padding-bottom: 0;
+	/* [disabled]padding-left: 30px; */
+}
+
+
+.nav .select a:hover, 
+.nav .select li:hover a {
+	padding:0 0 0 15px;
+	cursor:pointer;
+}
+
+.nav .select a b{
+	font-weight:bold;
+	}
+
+.nav .select a:hover b, 
+.nav .select li:hover a b {
+	display:block;
+	padding:0 30px 0 15px;
+	cursor:pointer;
+}
+
+.nav .select_sub {
+display:none;
+}
+
+/* IE6 only */
+.nav table {
+border-collapse:collapse; 
+margin:-1px; 
+font-size:1em; 
+width:0; 
+height:0;
+}
+
+.nav .sub {
+display:table; 
+margin:0 auto; 
+padding:0; 
+list-style:none;
+}
+
+.nav .sub_active .current_sub a, 
+.nav .sub_active a:hover {
+background:transparent; 
+color:#2b3238;
+}
+
+.nav .select :hover .select_sub, 
+.nav .current .show {
+	display:block;
+	width:480px;
+	z-index:100;
+	text-align:center;
+}
+
+.nav .current .show {
+z-index:10;
+}
+
+.nav .select :hover .sub li a, 
+.nav .current .show .sub li a {
+	display:block;
+	float:left;
+	padding:0 10px 0 10px;
+	margin:0;
+	white-space:nowrap;
+	border:0;
+	color:#600;
+	background-color: #000;
+}
+
+.nav .current .sub li.sub_show a {
+color:#2b3238; 
+cursor:default; 
+}
+
+.nav .select .sub li a {
+	font-weight:normal;
+}
+
+.nav .select :hover .sub li a:hover, 
+.nav .current .sub li a:hover {
+	visibility:visible;
+	color:#CCC;
+}
